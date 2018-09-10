@@ -8,9 +8,9 @@ import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.synectiks.commons.interfaces.IApiController;
@@ -18,7 +18,7 @@ import com.synectiks.commons.interfaces.IApiController;
 /**
  * @author Rajesh
  */
-@Controller
+@RestController
 @RequestMapping(path = IApiController.API_PATH
 		+ IApiController.URL_RESOURCE, method = RequestMethod.POST)
 public class ResourceController implements IApiController {
