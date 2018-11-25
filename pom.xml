@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>com.synectiks</groupId>
 		<artifactId>parent</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
+		<version>2.0.0-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>businesscomponents</artifactId>
@@ -21,12 +21,12 @@
 		<dependency>
 			<groupId>com.synectiks</groupId>
 			<artifactId>common-libraries</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.synectiks</groupId>
 			<artifactId>schemas</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>${project.version}</version>
 		</dependency>
 		<!-- ElastiCache dependencies -->
 		<dependency>
